@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0748FC7D20034A43005C5F0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748FC7C20034A43005C5F0F /* AppDelegate.swift */; };
-		0748FC7F20034A43005C5F0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748FC7E20034A43005C5F0F /* ViewController.swift */; };
 		0748FC8220034A43005C5F0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0748FC8020034A43005C5F0F /* Main.storyboard */; };
 		0748FC8420034A43005C5F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0748FC8320034A43005C5F0F /* Assets.xcassets */; };
 		0748FC8720034A43005C5F0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0748FC8520034A43005C5F0F /* LaunchScreen.storyboard */; };
+		0748FC9020034B53005C5F0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748FC8E20034B53005C5F0F /* MainViewController.swift */; };
+		0748FC9120034B53005C5F0F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0748FC8F20034B53005C5F0F /* MainViewController.xib */; };
+		0748FC9320034B8C005C5F0F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748FC9220034B8C005C5F0F /* MainView.swift */; };
+		0748FC95200354D5005C5F0F /* hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748FC94200354D5005C5F0F /* hand.swift */; };
+		0748FC972003554D005C5F0F /* RSPExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748FC962003554D005C5F0F /* RSPExecutor.swift */; };
+		0748FC99200355B4005C5F0F /* EnemyTrend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748FC98200355B4005C5F0F /* EnemyTrend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0748FC7920034A43005C5F0F /* sampleapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampleapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0748FC7C20034A43005C5F0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0748FC7E20034A43005C5F0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0748FC8120034A43005C5F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0748FC8320034A43005C5F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0748FC8620034A43005C5F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0748FC8820034A43005C5F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0748FC8E20034B53005C5F0F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0748FC8F20034B53005C5F0F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		0748FC9220034B8C005C5F0F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0748FC94200354D5005C5F0F /* hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hand.swift; sourceTree = "<group>"; };
+		0748FC962003554D005C5F0F /* RSPExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPExecutor.swift; sourceTree = "<group>"; };
+		0748FC98200355B4005C5F0F /* EnemyTrend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyTrend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				0748FC7C20034A43005C5F0F /* AppDelegate.swift */,
-				0748FC7E20034A43005C5F0F /* ViewController.swift */,
 				0748FC8020034A43005C5F0F /* Main.storyboard */,
 				0748FC8320034A43005C5F0F /* Assets.xcassets */,
 				0748FC8520034A43005C5F0F /* LaunchScreen.storyboard */,
 				0748FC8820034A43005C5F0F /* Info.plist */,
+				0748FC8E20034B53005C5F0F /* MainViewController.swift */,
+				0748FC8F20034B53005C5F0F /* MainViewController.xib */,
+				0748FC9220034B8C005C5F0F /* MainView.swift */,
+				0748FC94200354D5005C5F0F /* hand.swift */,
+				0748FC962003554D005C5F0F /* RSPExecutor.swift */,
+				0748FC98200355B4005C5F0F /* EnemyTrend.swift */,
 			);
 			path = sampleapp;
 			sourceTree = "<group>";
@@ -126,6 +141,7 @@
 				0748FC8720034A43005C5F0F /* LaunchScreen.storyboard in Resources */,
 				0748FC8420034A43005C5F0F /* Assets.xcassets in Resources */,
 				0748FC8220034A43005C5F0F /* Main.storyboard in Resources */,
+				0748FC9120034B53005C5F0F /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0748FC7F20034A43005C5F0F /* ViewController.swift in Sources */,
+				0748FC9020034B53005C5F0F /* MainViewController.swift in Sources */,
+				0748FC9320034B8C005C5F0F /* MainView.swift in Sources */,
+				0748FC972003554D005C5F0F /* RSPExecutor.swift in Sources */,
+				0748FC99200355B4005C5F0F /* EnemyTrend.swift in Sources */,
+				0748FC95200354D5005C5F0F /* hand.swift in Sources */,
 				0748FC7D20034A43005C5F0F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6UACV3JPL;
 				INFOPLIST_FILE = sampleapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.dokup.sampleapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6UACV3JPL;
 				INFOPLIST_FILE = sampleapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.dokup.sampleapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

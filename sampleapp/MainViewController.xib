@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="sampleapp" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="i5M-Pr-FkT" id="29Q-Vv-v4z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="MainView" customModule="sampleapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="F6h-di-rj6">
+                    <rect key="frame" x="8" y="629" width="359" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-fe-SYo">
+                            <rect key="frame" x="0.0" y="0.0" width="119.5" height="30"/>
+                            <state key="normal" title="ぐー"/>
+                            <connections>
+                                <action selector="tapRockButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="NQQ-Eo-tZs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJI-HR-sxV">
+                            <rect key="frame" x="119.5" y="0.0" width="120" height="30"/>
+                            <state key="normal" title="ちょき"/>
+                            <connections>
+                                <action selector="tapScissorsButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="6Mb-w0-f1W"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBh-C8-zQz">
+                            <rect key="frame" x="239.5" y="0.0" width="119.5" height="30"/>
+                            <state key="normal" title="ぱー"/>
+                            <connections>
+                                <action selector="tapPaperButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="P68-4a-i26"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="じゃんけん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyM-uq-yOW">
+                    <rect key="frame" x="116.5" y="120" width="142" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F6h-di-rj6" secondAttribute="trailing" constant="8" id="2S7-0y-g1t"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="F6h-di-rj6" secondAttribute="bottom" constant="8" id="Pbe-Gl-2mP"/>
+                <constraint firstItem="kyM-uq-yOW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YTv-Y5-VO2"/>
+                <constraint firstItem="F6h-di-rj6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="nTL-M3-wbu"/>
+                <constraint firstItem="kyM-uq-yOW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="ncC-IS-mlb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outlet property="resultLabel" destination="kyM-uq-yOW" id="uT1-EU-ZEU"/>
+            </connections>
+        </view>
+    </objects>
+</document>
